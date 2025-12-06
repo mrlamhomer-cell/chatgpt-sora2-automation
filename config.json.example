@@ -1,0 +1,9 @@
+{
+  "chatgpt_email": "your@email.com",
+  "chatgpt_password": "your_password",
+  "openai_email": "your@email.com",
+  "openai_password": "your_password",
+  "google_sheets_id": "YOUR_GOOGLE_SHEET_ID_HERE",
+  "download_folder": "./videos",
+  "chrome_profile_path": null
+}
