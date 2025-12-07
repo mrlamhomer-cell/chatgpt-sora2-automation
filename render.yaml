@@ -1,0 +1,24 @@
+services:
+  - type: background
+    name: chatgpt-sora2-automation
+    runtime: docker
+    repo: https://github.com/mrlamhomer-cell/chatgpt-sora2-automation
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: CHATGPT_EMAIL
+        sync: false
+      - key: CHATGPT_PASSWORD
+        sync: false
+      - key: OPENAI_EMAIL
+        sync: false
+      - key: OPENAI_PASSWORD
+        sync: false
+      - key: GOOGLE_SHEETS_ID
+        sync: false
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /app/credentials.json
+    # Schedule: Run every hour
+    # Note: Free tier runs continuously, you may need to implement internal scheduling
+    plan: free
